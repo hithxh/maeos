@@ -1,0 +1,25 @@
+#卫星星座参数配置
+n_spacecraft: 3
+n_planes: 3
+altitude: 500000  # 单位: 米
+inc: 45  # 轨道倾角，单位: 度
+clustersize: 3
+clusterspacing: 30  # 单位: 度
+sim_rate: 0.5
+max_step_duration: 600.0  # 单位: 秒
+time_limit: 5700  # 单位: 秒
+log_level: "warning"
+
+# Agent参数配置
+n_hiddens: 512
+actor_lr: 0.003
+critic_lr: 0.003
+gamma: 0.999
+lmbda: 0.95
+eps: 0.1
+device: "cuda"  # 可选择 "cuda" 或 "cpu"
+num_episodes: 100000
+
+# 算法参数配置
+shared: False
+batch_size: 5000
