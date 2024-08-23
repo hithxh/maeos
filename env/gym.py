@@ -275,7 +275,7 @@ class GeneralSatelliteTasking(Env, Generic[SatObs, SatAct]):
     def delete_simulator(self):
         """Delete Basilisk objects.
 
-        Only the simulator contains strong references to BSK models, so deleting it
+        Only the simulator contains strong references to Basilisk models, so deleting it
         will delete all Basilisk objects. Enable debug-level logging to verify that the
         simulator, FSW, dynamics, and world models are all deleted on reset.
         """

@@ -871,7 +871,7 @@ class SteeringFSWModel(BasicFSWModel):
         """FSW extending attitude control to use MRP steering instead of MRP feedback.
 
         This class replaces the simple attitude feedback control law with a more
-        sophisticated `MRP steering control law <https://hanspeterschaub.info/basilisk/Documentation/fswAlgorithms/attControl/mrpSteering/mrpSteering.html>`_.
+        sophisticated `MRP steering control law <https://hanspeterschaub.info/Basilisk/Documentation/fswAlgorithms/attControl/mrpSteering/mrpSteering.html>`_.
         """
         super().__init__(*args, **kwargs)
 

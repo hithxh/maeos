@@ -46,7 +46,7 @@ if TYPE_CHECKING:  # pragma: no cover
 
 logger = logging.getLogger(__name__)
 
-bsk_path = __path__[0]
+Basilisk_path = __path__[0]
 
 
 class WorldModel(ABC):
@@ -172,13 +172,13 @@ class BasicWorldModel(WorldModel):
             True  # ensure this is the central gravitational body
         )
         self.planet.useSphericalHarmonicsGravityModel(
-            bsk_path + "/supportData/LocalGravData/GGM03S.txt", 10
+            Basilisk_path + "/supportData/LocalGravData/GGM03S.txt", 10
         )
 
         # setup Spice interface for some solar system bodies
         timeInitString = utc_init
         self.gravFactory.createSpiceInterface(
-            bsk_path + "/supportData/EphemerisData/", timeInitString
+            Basilisk_path + "/supportData/EphemerisData/", timeInitString
         )
         self.gravFactory.spiceObject.zeroBase = "earth"
 

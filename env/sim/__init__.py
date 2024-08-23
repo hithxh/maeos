@@ -22,14 +22,14 @@ contributes to the realism of the simulation, as the satellite is being controll
 through its flight software.
 
 The :class:`~env.Simulator` is the main class for the simulation environment,
-subclassing from the `Basilisk SimBaseClass <http://hanspeterschaub.info/basilisk/Documentation/utilities/SimulationBaseClass.html?highlight=simbaseclass#SimulationBaseClass.SimBaseClass>`_.
+subclassing from the `Basilisk SimBaseClass <http://hanspeterschaub.info/Basilisk/Documentation/utilities/SimulationBaseClass.html?highlight=simbaseclass#SimulationBaseClass.SimBaseClass>`_.
 At each environment reset, the simulator and the associated flight software, dynamics,
 and world models are deleted and reconstructed, generating a fresh Basilisk simulation.
 """
 
 from env.sim.simulator import Simulator
 
-__doc_title__ = "Simulation (BSK)"
+__doc_title__ = "Simulation (Basilisk)"
 __all__ = [
     "Simulator",
 ]
